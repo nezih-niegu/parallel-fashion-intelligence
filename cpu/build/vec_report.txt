@@ -1,0 +1,273 @@
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:83:40: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:336:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:479:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:479:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:488:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:268:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:348:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:447:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:447:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:458:42: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:458:42: optimized:  loop versioned for vectorization because of possible aliasing
+hpc_cpu.cpp:458:42: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:461:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:461:9: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:83:40: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:282:50: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:336:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:479:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:479:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:488:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:268:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:348:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:379:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:439:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:447:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:447:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:458:42: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:458:42: optimized:  loop versioned for vectorization because of possible aliasing
+hpc_cpu.cpp:458:42: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:461:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:461:9: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:330:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:254:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:82:9: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:83:40: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:283:50: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/new_allocator.h:191:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:521:30: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:337:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:480:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:480:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:489:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:269:18: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_uninitialized.h:642:19: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/vector.tcc:705:31: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_construct.h:119:7: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:349:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:380:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:380:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:380:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:380:49: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:440:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:440:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:440:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:440:17: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:448:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:448:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:459:42: optimized: loop vectorized using 32 byte vectors
+hpc_cpu.cpp:459:42: optimized:  loop versioned for vectorization because of possible aliasing
+hpc_cpu.cpp:459:42: optimized: loop vectorized using 16 byte vectors
+hpc_cpu.cpp:462:9: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:462:9: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_algobase.h:930:22: optimized: loop vectorized using 16 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:100:4: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:398:25: optimized: basic block part vectorized using 32 byte vectors
+/usr/include/c++/13/bits/stl_vector.h:115:13: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:331:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:331:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:331:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:331:10: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:255:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:255:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:255:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:255:8: optimized: basic block part vectorized using 32 byte vectors
+hpc_cpu.cpp:255:8: optimized: basic block part vectorized using 32 byte vectors

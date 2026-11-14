@@ -1,0 +1,251 @@
+== K_SCALAR dense_scalar_rows
+   FP instruction mix: {'vmulss': 1, 'vaddss': 2}
+   register widths in FP ops: {'xmm': 7}
+   hot loop: 21 instructions, 3 vector FP ops, distinct accumulator destinations: 1 ['%xmm1']
+   hot loop listing:
+     2750:	test   %r8d,%r8d
+     2753:	jle    27c0 <(anonymous namespace)::dense_scalar_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool)+0x100>
+     2755:	xor    %eax,%eax
+     2757:	vxorps %xmm1,%xmm1,%xmm1
+     275b:	nopl   0x0(%rax,%rax,1)
+     2760:	vmovss (%rsi,%rax,1),%xmm0
+     2765:	vmulss (%rdx,%rax,1),%xmm0,%xmm0
+     276a:	add    $0x4,%rax
+     276e:	vaddss %xmm0,%xmm1,%xmm1
+     2772:	cmp    %rax,%rcx
+     2775:	jne    2760 <(anonymous namespace)::dense_scalar_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool)+0xa0>
+     2777:	vaddss (%r10,%rdi,4),%xmm1,%xmm1
+     277d:	test   %r13b,%r13b
+     2780:	je     278d <(anonymous namespace)::dense_scalar_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool)+0xcd>
+     2782:	vcmpnltss %xmm3,%xmm1,%xmm0
+     2787:	vblendvps %xmm0,%xmm1,%xmm2,%xmm1
+     278d:	vmovss %xmm1,(%r15,%rdi,4)
+     2793:	inc    %rdi
+     2796:	add    %rcx,%rdx
+     2799:	cmp    %edi,%r9d
+     279c:	jg     2750 <(anonymous namespace)::dense_scalar_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool)+0x90>
+== K_SIMD dot_simd (omp simd)
+   FP instruction mix: {'vmulps': 1, 'vaddps': 1, 'vfmadd132ss': 1, 'vfmadd231ss': 6, 'vaddss': 8}
+   register widths in FP ops: {'ymm': 5, 'xmm': 30}
+   hot loop: 59 instructions, 15 vector FP ops, distinct accumulator destinations: 1 ['%xmm0']
+   hot loop listing:
+     284a:	movslq %edi,%r8
+     284d:	vmovss (%rsp),%xmm3
+     2852:	vmovss (%rcx,%r8,4),%xmm0
+     2858:	lea    0x0(,%r8,4),%rax
+     2860:	vfmadd132ss (%rsi,%r8,4),%xmm3,%xmm0
+     2866:	lea    0x1(%rdi),%r8d
+     286a:	vmovss %xmm0,(%rsp)
+     286f:	cmp    %r8d,%edx
+     2872:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     2878:	vmovss 0x4(%rcx,%rax,1),%xmm4
+     287e:	lea    0x2(%rdi),%r8d
+     2882:	vfmadd231ss 0x4(%rsi,%rax,1),%xmm4,%xmm0
+     2889:	vmovss %xmm0,(%rsp)
+     288e:	cmp    %r8d,%edx
+     2891:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     2893:	vmovss 0x8(%rcx,%rax,1),%xmm5
+     2899:	lea    0x3(%rdi),%r8d
+     289d:	vfmadd231ss 0x8(%rsi,%rax,1),%xmm5,%xmm0
+     28a4:	vmovss %xmm0,(%rsp)
+     28a9:	cmp    %r8d,%edx
+     28ac:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     28ae:	vmovss 0xc(%rcx,%rax,1),%xmm6
+     28b4:	lea    0x4(%rdi),%r8d
+     28b8:	vfmadd231ss 0xc(%rsi,%rax,1),%xmm6,%xmm0
+     28bf:	vmovss %xmm0,(%rsp)
+     28c4:	cmp    %r8d,%edx
+     28c7:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     28c9:	vmovss 0x10(%rcx,%rax,1),%xmm7
+     28cf:	lea    0x5(%rdi),%r8d
+     28d3:	vfmadd231ss 0x10(%rsi,%rax,1),%xmm7,%xmm0
+     28da:	vmovss %xmm0,(%rsp)
+     28df:	cmp    %r8d,%edx
+     28e2:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     28e4:	vmovss 0x14(%rcx,%rax,1),%xmm7
+     28ea:	add    $0x6,%edi
+     28ed:	vfmadd231ss 0x14(%rsi,%rax,1),%xmm7,%xmm0
+     28f4:	vmovss %xmm0,(%rsp)
+     28f9:	cmp    %edi,%edx
+     28fb:	jle    290f <(anonymous namespace)::dot_simd(float const*, float const*, int)+0x13f>
+     28fd:	vmovss 0x18(%rcx,%rax,1),%xmm6
+== K_SIMD_ILP dense_simd_rows (inlined dot_ilp)
+   FP instruction mix: {'vaddss': 2, 'vfmadd231ps': 6, 'vaddps': 6}
+   register widths in FP ops: {'xmm': 11, 'zmm': 22, 'ymm': 3}
+   hot loop: 87 instructions, 14 vector FP ops, distinct accumulator destinations: 7 ['%xmm0', '%xmm1', '%ymm0', '%zmm0', '%zmm1', '%zmm2', '%zmm3']
+   hot loop listing:
+     2a8e:	mov    0x50(%rsp),%rax
+     2a93:	cmpb   $0x0,0x6f(%rsp)
+     2a98:	vaddss (%rax,%r15,1),%xmm0,%xmm0
+     2a9e:	je     2aaf <(anonymous namespace)::dense_simd_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool, bool)+0x13f>
+     2aa0:	vxorps %xmm6,%xmm6,%xmm6
+     2aa4:	vcmpnltss %xmm6,%xmm0,%xmm1
+     2aa9:	vblendvps %xmm1,%xmm0,%xmm6,%xmm0
+     2aaf:	mov    0x70(%rsp),%rax
+     2ab4:	vmovss %xmm0,(%rax,%r15,1)
+     2aba:	mov    0x78(%rsp),%rax
+     2abf:	add    $0x4,%r15
+     2ac3:	add    %rax,%r12
+     2ac6:	cmp    %r15,0x60(%rsp)
+     2acb:	je     2c20 <(anonymous namespace)::dense_simd_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool, bool)+0x2b0>
+     2ad1:	mov    0x58(%rsp),%rax
+     2ad6:	lea    (%rax,%r12,1),%rsi
+     2ada:	test   %r14b,%r14b
+     2add:	je     2a80 <(anonymous namespace)::dense_simd_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool, bool)+0x110>
+     2adf:	cmp    $0x3f,%r13d
+     2ae3:	jle    2c58 <(anonymous namespace)::dense_simd_rows(float const*, (anonymous namespace)::Layer const&, float*, int, int, int, int, bool, bool)+0x2e8>
+     2ae9:	mov    0x40(%rsp),%rcx
+     2aee:	vxorps %xmm3,%xmm3,%xmm3
+     2af2:	mov    %rsi,%rax
+     2af5:	mov    %rbx,%rdx
+     2af8:	vmovaps %zmm3,%zmm1
+     2afe:	vmovaps %zmm3,%zmm2
+     2b04:	vmovaps %zmm3,%zmm0
+     2b0a:	lea    (%rcx,%rsi,1),%r10
+     2b0e:	xchg   %ax,%ax
+     2b10:	vmovups (%rdx),%zmm4
+     2b16:	vmovups 0x40(%rdx),%zmm5
+     2b1d:	add    $0x100,%rax
+     2b23:	add    $0x100,%rdx
+     2b2a:	vmovups -0x80(%rdx),%zmm6
+     2b31:	vmovups -0x40(%rdx),%zmm7
+     2b38:	vfmadd231ps -0x100(%rax),%zmm4,%zmm0
+     2b3f:	vfmadd231ps -0xc0(%rax),%zmm5,%zmm2
+     2b46:	vfmadd231ps -0x80(%rax),%zmm6,%zmm1
+     2b4d:	vfmadd231ps -0x40(%rax),%zmm7,%zmm3
+     2b54:	cmp    %r10,%rax
+== K_BLOCKED micro<4,4,1>
+   FP instruction mix: {'vfmadd231ps': 16, 'vaddps': 32}
+   register widths in FP ops: {'zmm': 112}
+   hot loop: 257 instructions, 48 vector FP ops, distinct accumulator destinations: 18 ['%zmm0', '%zmm1', '%zmm10', '%zmm11', '%zmm12', '%zmm13', '%zmm14', '%zmm15', '%zmm16', '%zmm17', '%zmm18', '%zmm19', '%zmm20', '%zmm5', '%zmm6', '%zmm7', '%zmm8', '%zmm9']
+   hot loop listing:
+     5e26:	movslq 0x10(%rbp),%r10
+     5e2a:	movslq %ebx,%r15
+     5e2d:	movslq 0x18(%rbp),%r14
+     5e31:	movzwl %r8w,%r8d
+     5e35:	kmovw  0x3e(%rsp),%k2
+     5e3b:	kmovw  0x3a(%rsp),%k3
+     5e41:	mov    %r15,%rdx
+     5e44:	kmovd  %r8d,%k1
+     5e49:	kmovw  0x3c(%rsp),%k4
+     5e4f:	lea    0x0(,%r10,4),%rcx
+     5e57:	imul   %rcx,%rdx
+     5e5b:	lea    0x4(%rcx),%rdi
+     5e5f:	imul   %r15,%rdi
+     5e63:	lea    0x8(%rcx),%rsi
+     5e67:	add    $0xc,%rcx
+     5e6b:	imul   %r15,%rsi
+     5e6f:	imul   %r15,%rcx
+     5e73:	add    %r11,%rdx
+     5e76:	add    %r11,%rdi
+     5e79:	add    %r11,%rsi
+     5e7c:	add    %r11,%rcx
+     5e7f:	lea    0x0(,%r14,4),%r11
+     5e87:	add    %r11,%rax
+     5e8a:	test   %ebx,%ebx
+     5e8c:	jle    6033 <void (anonymous namespace)::micro<4, 4, 1>(float const*, int, float const*, int, float const*, float*, int, int, int, bool)+0x363>
+     5e92:	vxorps %xmm20,%xmm20,%xmm20
+     5e98:	lea    0x0(,%r13,4),%rbx
+     5ea0:	lea    (%rdx,%r15,4),%r8
+     5ea4:	vmovaps %zmm20,%zmm19
+     5eaa:	vmovaps %zmm20,%zmm18
+     5eb0:	vmovaps %zmm20,%zmm17
+     5eb6:	vmovaps %zmm20,%zmm16
+     5ebc:	vmovaps %zmm20,%zmm15
+     5ec2:	vmovaps %zmm20,%zmm14
+     5ec8:	vmovaps %zmm20,%zmm13
+     5ece:	vmovaps %zmm20,%zmm12
+     5ed4:	vmovaps %zmm20,%zmm11
+     5eda:	vmovaps %zmm20,%zmm10
+     5ee0:	vmovaps %zmm20,%zmm9
+     5ee6:	vmovaps %zmm20,%zmm8
+== K_BLOCKED micro<1,4,1> (batch-1, 64 outputs)
+   FP instruction mix: {'vfmadd231ps': 4, 'vaddps': 7}
+   register widths in FP ops: {'zmm': 33}
+   hot loop: 92 instructions, 11 vector FP ops, distinct accumulator destinations: 5 ['%zmm0', '%zmm1', '%zmm2', '%zmm3', '%zmm4']
+   hot loop listing:
+     32a3:	movslq 0x10(%rbp),%r14
+     32a7:	movslq 0x18(%rbp),%r13
+     32ab:	movzwl %si,%esi
+     32ae:	movslq %r11d,%r15
+     32b1:	kmovw  -0x2(%rsp),%k3
+     32b7:	movzwl %dx,%edx
+     32ba:	kmovd  %esi,%k2
+     32be:	movzwl %cx,%esi
+     32c1:	mov    %r14,%rbx
+     32c4:	lea    0x0(,%r13,4),%r10
+     32cc:	kmovd  %edx,%k4
+     32d0:	kmovd  %esi,%k1
+     32d4:	imul   %r15,%rbx
+     32d8:	add    %r10,%r12
+     32db:	test   %r11d,%r11d
+     32de:	jle    349f <void (anonymous namespace)::micro<1, 4, 1>(float const*, int, float const*, int, float const*, float*, int, int, int, bool)+0x29f>
+     32e4:	vxorps %xmm1,%xmm1,%xmm1
+     32e8:	mov    %r12,%r11
+     32eb:	lea    (%rdi,%rbx,4),%r12
+     32ef:	add    %r15,%rbx
+     32f2:	lea    0x0(,%rax,4),%rcx
+     32fa:	lea    (%rdi,%rbx,4),%rdx
+     32fe:	vmovaps %zmm1,%zmm2
+     3304:	vmovaps %zmm1,%zmm3
+     330a:	vmovaps %zmm1,%zmm4
+     3310:	vbroadcastss (%r12),%zmm0
+     3317:	vmovups (%r11),%zmm8{%k4}{z}
+     331d:	add    $0x4,%r12
+     3321:	vmovups 0x40(%r11),%zmm7{%k3}{z}
+     3328:	vmovups 0x80(%r11),%zmm6{%k2}{z}
+     332f:	vmovups 0xc0(%r11),%zmm5{%k1}{z}
+     3336:	vfmadd231ps %zmm8,%zmm0,%zmm4
+     333c:	add    %rcx,%r11
+     333f:	vfmadd231ps %zmm7,%zmm0,%zmm3
+     3345:	vfmadd231ps %zmm6,%zmm0,%zmm2
+     334b:	vfmadd231ps %zmm5,%zmm0,%zmm1
+     3351:	cmp    %rdx,%r12
+     3354:	jne    3310 <void (anonymous namespace)::micro<1, 4, 1>(float const*, int, float const*, int, float const*, float*, int, int, int, bool)+0x110>
+     3356:	imul   %r14,%rax
+     335a:	vmovups (%r8,%r10,1),%zmm0{%k4}{z}
+== K_BLOCKED micro<1,2,2> (batch-1, i-split ILP)
+   FP instruction mix: {'vfmadd132ps': 4, 'vfmadd231ps': 4, 'vaddps': 6}
+   register widths in FP ops: {'zmm': 42}
+   hot loop: 142 instructions, 14 vector FP ops, distinct accumulator destinations: 4 ['%zmm0', '%zmm1', '%zmm2', '%zmm3']
+   hot loop listing:
+     2d0c:	movslq 0x10(%rbp),%r14
+     2d10:	movslq %ebx,%rax
+     2d13:	movslq 0x18(%rbp),%r15
+     2d17:	movslq %ecx,%rcx
+     2d1a:	imul   %r14,%rax
+     2d1e:	lea    0x0(,%r15,4),%r12
+     2d26:	add    %r12,%r11
+     2d29:	lea    (%r10,%rax,4),%r13
+     2d2d:	cmp    $0x1,%ebx
+     2d30:	jle    2f9d <void (anonymous namespace)::micro<1, 2, 2>(float const*, int, float const*, int, float const*, float*, int, int, int, bool)+0x31d>
+     2d36:	lea    -0x2(%rbx),%esi
+     2d39:	mov    %r15,0x30(%rsp)
+     2d3e:	vmovaps 0x40(%rsp),%zmm7
+     2d46:	mov    %r11,%rdx
+     2d49:	shr    $1,%esi
+     2d4b:	mov    %r12,0x28(%rsp)
+     2d50:	vmovaps 0x80(%rsp),%zmm6
+     2d58:	mov    %r13,%rax
+     2d5b:	lea    0x0(%r13,%rsi,8),%r10
+     2d60:	vmovaps 0xc0(%rsp),%zmm5
+     2d68:	vmovaps 0x100(%rsp),%zmm4
+     2d70:	mov    %esi,0x3c(%rsp)
+     2d74:	lea    0x0(,%rcx,4),%rsi
+     2d7c:	lea    0x40(%rsi),%r9
+     2d80:	vmovups 0x40(%rdx),%zmm0{%k1}{z}
+     2d87:	vmovups (%rdx),%zmm3{%k2}{z}
+     2d8d:	lea    (%rdx,%rsi,1),%r12
+     2d91:	mov    %rax,%r15
+     2d94:	vbroadcastss (%rax),%zmm1
+     2d9a:	add    $0x8,%rax
+     2d9e:	vfmadd132ps %zmm1,%zmm7,%zmm3
+     2da4:	vfmadd132ps %zmm0,%zmm6,%zmm1
+     2daa:	vbroadcastss -0x4(%rax),%zmm0
+     2db1:	vmovaps %zmm3,0x40(%rsp)
+     2db9:	vmovaps %zmm3,%zmm7
+     2dbf:	vmovaps %zmm1,%zmm6
+     2dc5:	vmovaps %zmm1,0x80(%rsp)
+     2dcd:	vmovups (%r9,%rdx,1),%zmm8{%k1}{z}
+     2dd4:	vmovups (%r12),%zmm2{%k2}{z}
+     2ddb:	lea    (%r12,%rsi,1),%rdx

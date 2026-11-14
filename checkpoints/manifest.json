@@ -1,0 +1,119 @@
+{
+  "preprocess": {
+    "mean": 0.28616465936374547,
+    "std": 0.3529869942516782
+  },
+  "groups": [
+    {
+      "name": "Upper-body",
+      "classes": [
+        0,
+        2,
+        4,
+        6
+      ]
+    },
+    {
+      "name": "Lower/full-body",
+      "classes": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "Footwear",
+      "classes": [
+        5,
+        7,
+        9
+      ]
+    },
+    {
+      "name": "Accessories",
+      "classes": [
+        8
+      ]
+    }
+  ],
+  "train_seed": 6,
+  "epochs": 30,
+  "batch": 128,
+  "dropout": 0.2,
+  "optimizer": "Adam + OneCycle(max_lr=2e-3)",
+  "selection_rule": "max val acc; within 0.15 pp -> fewest params",
+  "models": {
+    "flat": {
+      "dims": [
+        784,
+        256,
+        128,
+        10
+      ],
+      "pt": "flat.pt",
+      "bin": "flat.bin",
+      "params": 235146,
+      "bytes_fp32": 940584,
+      "sha256_bin": "9c8dbba01b06f36195789378323d6365056320e8c458e419f260e11261ea97a4",
+      "val_acc": 0.902999997138977,
+      "best_epoch": 29
+    },
+    "router": {
+      "dims": [
+        784,
+        64,
+        4
+      ],
+      "pt": "router.pt",
+      "bin": "router.bin",
+      "params": 50500,
+      "bytes_fp32": 202000,
+      "sha256_bin": "2d6f0e8e43f8f39f974e174059a572e9a48dc324cdbc262a77c706b461c503a6",
+      "val_acc": 0.9789000153541565,
+      "best_epoch": 23
+    },
+    "spec0": {
+      "dims": [
+        784,
+        128,
+        64,
+        4
+      ],
+      "pt": "spec0.pt",
+      "bin": "spec0.bin",
+      "params": 108996,
+      "bytes_fp32": 435984,
+      "sha256_bin": "c265a3eea37b45cf2535238c4ede4ee7486aebc172f22af9cc397cbf1fc51d95",
+      "val_acc": 0.8389999866485596,
+      "best_epoch": 30
+    },
+    "spec1": {
+      "dims": [
+        784,
+        32,
+        2
+      ],
+      "pt": "spec1.pt",
+      "bin": "spec1.bin",
+      "params": 25186,
+      "bytes_fp32": 100744,
+      "sha256_bin": "67083f0297d03869e1c5f0ba1312d7e5560df96c94409ea59e6b07274052b1bc",
+      "val_acc": 0.9884999990463257,
+      "best_epoch": 16
+    },
+    "spec2": {
+      "dims": [
+        784,
+        64,
+        32,
+        3
+      ],
+      "pt": "spec2.pt",
+      "bin": "spec2.bin",
+      "params": 52419,
+      "bytes_fp32": 209676,
+      "sha256_bin": "1542d2b9d2d4a8d304cef7e7315533968e2291af68344bd364e1180a8a149ba8",
+      "val_acc": 0.9589999914169312,
+      "best_epoch": 21
+    }
+  }
+}
