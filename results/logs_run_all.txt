@@ -1,0 +1,186 @@
+=== repetition 0 20:15:52
+flat_torch_T1 run0: B1 median 49.6us p99 132.6us acc 0.892
+flat_custom_T1 run0: B1 median 10.9us p99 34.0us acc 0.892
+hier_torch_T1 run0: B1 median 109.7us p99 328.7us acc 0.879
+hier_custom_T1 run0: B1 median 11.8us p99 41.3us acc 0.879
+flat_torch_T2 run0: B1 median 50.4us p99 126.0us acc 0.892
+flat_custom_T2 run0: B1 median 12.9us p99 33.1us acc 0.892
+hier_torch_T2 run0: B1 median 119.7us p99 245.2us acc 0.879
+hier_custom_T2 run0: B1 median 15.4us p99 41.9us acc 0.879
+flat_torch_T4 run0: B1 median 181.0us p99 313.7us acc 0.892
+flat_custom_T4 run0: B1 median 117.6us p99 216.6us acc 0.892
+hier_torch_T4 run0: B1 median 205.7us p99 265.2us acc 0.879
+hier_custom_T4 run0: B1 median 185.5us p99 255.2us acc 0.879
+flat_custom_T1_ndpointer run0: B1 median 22.3us p99 65.2us acc 0.892
+hier_custom_T1_ndpointer run0: B1 median 21.5us p99 69.9us acc 0.879
+flat_custom_T1_scalar run0: B1 median 140.3us p99 264.8us acc 0.892
+hier_custom_T1_scalar run0: B1 median 68.9us p99 120.8us acc 0.879
+flat_custom_T1_simd run0: B1 median 25.4us p99 57.7us acc 0.892
+hier_custom_T1_simd run0: B1 median 12.6us p99 35.6us acc 0.879
+flat_custom_T1_simd_ilp run0: B1 median 11.6us p99 34.4us acc 0.892
+hier_custom_T1_simd_ilp run0: B1 median 10.3us p99 33.2us acc 0.879
+mpi_bench_custom_P1_run0 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'custom', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_custom_P1_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P1_run0 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'torch', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_torch_P1_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P2_run0 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'custom', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_custom_P2_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P2_run0 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'torch', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_torch_P2_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P3_run0 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_custom_P3_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P3_run0 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_torch_P3_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P4_run0 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_custom_P4_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P4_run0 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_torch_P4_run0 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+=== repetition 1 20:17:13
+flat_torch_T1 run1: B1 median 62.6us p99 145.2us acc 0.892
+flat_custom_T1 run1: B1 median 14.3us p99 46.9us acc 0.892
+hier_torch_T1 run1: B1 median 114.8us p99 287.8us acc 0.879
+hier_custom_T1 run1: B1 median 10.8us p99 40.3us acc 0.879
+flat_torch_T2 run1: B1 median 43.6us p99 109.2us acc 0.892
+flat_custom_T2 run1: B1 median 12.8us p99 39.3us acc 0.892
+hier_torch_T2 run1: B1 median 91.0us p99 306.9us acc 0.879
+hier_custom_T2 run1: B1 median 16.4us p99 43.7us acc 0.879
+flat_torch_T4 run1: B1 median 184.3us p99 284.8us acc 0.892
+flat_custom_T4 run1: B1 median 113.4us p99 199.0us acc 0.892
+hier_torch_T4 run1: B1 median 211.9us p99 379.6us acc 0.879
+hier_custom_T4 run1: B1 median 193.1us p99 358.3us acc 0.879
+flat_custom_T1_ndpointer run1: B1 median 30.8us p99 127.4us acc 0.892
+hier_custom_T1_ndpointer run1: B1 median 20.9us p99 67.2us acc 0.879
+flat_custom_T1_scalar run1: B1 median 143.2us p99 245.6us acc 0.892
+hier_custom_T1_scalar run1: B1 median 81.7us p99 352.3us acc 0.879
+flat_custom_T1_simd run1: B1 median 25.5us p99 55.0us acc 0.892
+hier_custom_T1_simd run1: B1 median 14.2us p99 41.7us acc 0.879
+flat_custom_T1_simd_ilp run1: B1 median 15.4us p99 43.8us acc 0.892
+hier_custom_T1_simd_ilp run1: B1 median 10.7us p99 38.8us acc 0.879
+mpi_bench_custom_P1_run1 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'custom', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_custom_P1_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P1_run1 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'torch', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_torch_P1_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P2_run1 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'custom', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_custom_P2_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P2_run1 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'torch', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_torch_P2_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P3_run1 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_custom_P3_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P3_run1 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_torch_P3_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P4_run1 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_custom_P4_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P4_run1 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_torch_P4_run1 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+=== repetition 2 20:18:35
+flat_torch_T1 run2: B1 median 86.9us p99 244.7us acc 0.892
+flat_custom_T1 run2: B1 median 14.2us p99 45.2us acc 0.892
+hier_torch_T1 run2: B1 median 90.2us p99 196.2us acc 0.879
+hier_custom_T1 run2: B1 median 11.7us p99 54.0us acc 0.879
+flat_torch_T2 run2: B1 median 57.2us p99 127.6us acc 0.892
+flat_custom_T2 run2: B1 median 11.2us p99 26.8us acc 0.892
+hier_torch_T2 run2: B1 median 115.3us p99 218.7us acc 0.879
+hier_custom_T2 run2: B1 median 14.7us p99 38.6us acc 0.879
+flat_torch_T4 run2: B1 median 182.3us p99 451.7us acc 0.892
+flat_custom_T4 run2: B1 median 125.4us p99 227.1us acc 0.892
+hier_torch_T4 run2: B1 median 275.7us p99 1225.0us acc 0.879
+hier_custom_T4 run2: B1 median 189.4us p99 253.0us acc 0.879
+flat_custom_T1_ndpointer run2: B1 median 22.2us p99 76.6us acc 0.892
+hier_custom_T1_ndpointer run2: B1 median 22.1us p99 66.2us acc 0.879
+flat_custom_T1_scalar run2: B1 median 146.8us p99 198.8us acc 0.892
+hier_custom_T1_scalar run2: B1 median 69.2us p99 133.4us acc 0.879
+flat_custom_T1_simd run2: B1 median 25.4us p99 63.1us acc 0.892
+hier_custom_T1_simd run2: B1 median 12.4us p99 44.1us acc 0.879
+flat_custom_T1_simd_ilp run2: B1 median 12.5us p99 32.3us acc 0.892
+hier_custom_T1_simd_ilp run2: B1 median 11.9us p99 38.8us acc 0.879
+mpi_bench_custom_P1_run2 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'custom', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_custom_P1_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P1_run2 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'torch', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_torch_P1_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P2_run2 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'custom', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_custom_P2_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P2_run2 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'torch', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_torch_P2_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P3_run2 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_custom_P3_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P3_run2 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_torch_P3_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P4_run2 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_custom_P4_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P4_run2 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_torch_P4_run2 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+=== repetition 3 20:19:56
+flat_torch_T1 run3: B1 median 64.4us p99 493.6us acc 0.892
+flat_custom_T1 run3: B1 median 14.4us p99 45.1us acc 0.892
+hier_torch_T1 run3: B1 median 118.8us p99 272.9us acc 0.879
+hier_custom_T1 run3: B1 median 8.0us p99 25.1us acc 0.879
+flat_torch_T2 run3: B1 median 58.8us p99 112.0us acc 0.892
+flat_custom_T2 run3: B1 median 14.1us p99 41.2us acc 0.892
+hier_torch_T2 run3: B1 median 136.5us p99 374.5us acc 0.879
+hier_custom_T2 run3: B1 median 17.4us p99 65.6us acc 0.879
+flat_torch_T4 run3: B1 median 162.8us p99 427.5us acc 0.892
+flat_custom_T4 run3: B1 median 129.5us p99 190.5us acc 0.892
+hier_torch_T4 run3: B1 median 231.6us p99 343.9us acc 0.879
+hier_custom_T4 run3: B1 median 184.0us p99 297.7us acc 0.879
+flat_custom_T1_ndpointer run3: B1 median 15.8us p99 68.0us acc 0.892
+hier_custom_T1_ndpointer run3: B1 median 15.5us p99 52.6us acc 0.879
+flat_custom_T1_scalar run3: B1 median 112.1us p99 144.1us acc 0.892
+hier_custom_T1_scalar run3: B1 median 68.3us p99 127.1us acc 0.879
+flat_custom_T1_simd run3: B1 median 19.1us p99 48.4us acc 0.892
+hier_custom_T1_simd run3: B1 median 15.2us p99 58.8us acc 0.879
+flat_custom_T1_simd_ilp run3: B1 median 15.4us p99 40.7us acc 0.892
+hier_custom_T1_simd_ilp run3: B1 median 12.3us p99 42.4us acc 0.879
+mpi_bench_custom_P1_run3 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'custom', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_custom_P1_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P1_run3 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'torch', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_torch_P1_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P2_run3 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'custom', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_custom_P2_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P2_run3 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'torch', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_torch_P2_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P3_run3 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_custom_P3_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P3_run3 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_torch_P3_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P4_run3 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_custom_P4_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P4_run3 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_torch_P4_run3 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+=== repetition 4 20:21:18
+flat_torch_T1 run4: B1 median 51.4us p99 115.6us acc 0.892
+flat_custom_T1 run4: B1 median 14.4us p99 47.1us acc 0.892
+hier_torch_T1 run4: B1 median 83.4us p99 233.4us acc 0.879
+hier_custom_T1 run4: B1 median 11.7us p99 47.9us acc 0.879
+flat_torch_T2 run4: B1 median 56.9us p99 181.4us acc 0.892
+flat_custom_T2 run4: B1 median 12.3us p99 31.6us acc 0.892
+hier_torch_T2 run4: B1 median 89.7us p99 231.9us acc 0.879
+hier_custom_T2 run4: B1 median 14.5us p99 66.7us acc 0.879
+flat_torch_T4 run4: B1 median 187.9us p99 336.1us acc 0.892
+flat_custom_T4 run4: B1 median 127.1us p99 231.3us acc 0.892
+hier_torch_T4 run4: B1 median 262.3us p99 369.0us acc 0.879
+hier_custom_T4 run4: B1 median 168.0us p99 238.7us acc 0.879
+flat_custom_T1_ndpointer run4: B1 median 21.7us p99 64.6us acc 0.892
+hier_custom_T1_ndpointer run4: B1 median 21.3us p99 81.8us acc 0.879
+flat_custom_T1_scalar run4: B1 median 150.7us p99 258.2us acc 0.892
+hier_custom_T1_scalar run4: B1 median 75.7us p99 164.1us acc 0.879
+flat_custom_T1_simd run4: B1 median 19.7us p99 43.9us acc 0.892
+hier_custom_T1_simd run4: B1 median 11.3us p99 29.3us acc 0.879
+flat_custom_T1_simd_ilp run4: B1 median 14.0us p99 37.0us acc 0.892
+hier_custom_T1_simd_ilp run4: B1 median 9.1us p99 28.6us acc 0.879
+mpi_bench_custom_P1_run4 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'custom', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_custom_P1_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P1_run4 {'accuracy_B1': 0.879, 'P': 1, 'backend': 'torch', 'group_rank': {0: 0, 1: 0, 2: 0, 3: 0}}
+mpi_throughput_torch_P1_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P2_run4 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'custom', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_custom_P2_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P2_run4 {'accuracy_B1': 0.879, 'P': 2, 'backend': 'torch', 'group_rank': {0: 1, 1: 1, 2: 1, 3: 0}}
+mpi_throughput_torch_P2_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P3_run4 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_custom_P3_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P3_run4 {'accuracy_B1': 0.879, 'P': 3, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 2, 3: 0}}
+mpi_throughput_torch_P3_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+mpi_bench_custom_P4_run4 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'custom', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_custom_P4_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', '
+mpi_bench_torch_P4_run4 {'accuracy_B1': 0.879, 'P': 4, 'backend': 'torch', 'group_rank': {0: 1, 1: 2, 2: 3, 3: 0}}
+mpi_throughput_torch_P4_run4 {'batch': 64, 'requests': 100, 'window': 4, 'arrival': 'closed-loop, all queued at t=0', 'm
+done 20:22:40
