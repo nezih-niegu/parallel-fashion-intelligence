@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Fetch Fashion-MNIST (official repo) into data/raw and verify checksums.
+set -euo pipefail
+cd "$(dirname "$0")"; mkdir -p raw; cd raw
+for f in train-images-idx3-ubyte train-labels-idx1-ubyte t10k-images-idx3-ubyte t10k-labels-idx1-ubyte; do
+  curl -sSfL -o $f.gz https://raw.githubusercontent.com/zalandoresearch/fashion-mnist/master/data/fashion/$f.gz
+done
+sha256sum -c <<'SUMS'
+346e55b948d973a97e58d2351dde16a484bd415d4595297633bb08f03db6a073  t10k-images-idx3-ubyte.gz
+67da17c76eaffca5446c3361aaab5c3cd6d1c2608764d35dfb1850b086bf8dd5  t10k-labels-idx1-ubyte.gz
+3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84  train-images-idx3-ubyte.gz
+a04f17134ac03560a47e3764e11b92fc97de4d1bfaf8ba1a3aa29af54cc90845  train-labels-idx1-ubyte.gz
+SUMS
