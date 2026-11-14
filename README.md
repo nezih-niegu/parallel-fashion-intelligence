@@ -1,4 +1,4 @@
-# TC2038 — Parallel Fashion Intelligence Challenge
+# Parallel Fashion Intelligence Challenge
 
 A hierarchical Fashion-MNIST classifier (router + 3 specialists + singleton) with a flat
 PyTorch reference, a matched PyTorch hierarchy, a custom OpenMP + AVX-512 CPU backend,
